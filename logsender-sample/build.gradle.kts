@@ -14,7 +14,9 @@
  *  You should have received a copy of the GNU General Public License
  *   along with AndroidIDE.  If not, see <https://www.gnu.org/licenses/>.
  */
-
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.io.FileInputStream
+import java.util.Properties
 plugins {
   id("com.android.application")
 }
@@ -26,6 +28,41 @@ android {
     vectorDrawables {
       useSupportLibrary = true
     }
+  }
+  
+  
+    signingConfigs {
+        create("release") {
+            val localProperties = Properties()
+            val localPropertiesFile = rootProject.file("signing.properties")
+            enableV1Signing = true // 启用 V1 签名
+            enableV2Signing = true // 启用 V2 签名 (推荐，Android 7.0+)
+            enableV3Signing = true // 启用 V3 签名 (推荐，Android 9+)
+            if (localPropertiesFile.exists()) {
+                localProperties.load(FileInputStream(localPropertiesFile))
+                
+                val storeFilePath = localProperties.getProperty("storeFile")
+                val storePasswordValue = localProperties.getProperty("storePassword")
+                val keyAliasValue = localProperties.getProperty("keyAlias")
+                val keyPasswordValue = localProperties.getProperty("keyPassword")
+                
+                if (storeFilePath != null && storePasswordValue != null && 
+                    keyAliasValue != null && keyPasswordValue != null) {
+                    storeFile = file(storeFilePath)
+                    storePassword = storePasswordValue
+                    keyAlias = keyAliasValue
+                    keyPassword = keyPasswordValue
+                }
+            }
+        }
+    }
+    
+
+  buildTypes {
+      all{
+    signingConfig = signingConfigs.getByName("release")
+    }
+
   }
 }
 

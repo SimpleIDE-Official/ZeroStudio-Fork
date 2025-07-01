@@ -15,7 +15,7 @@ val packageVariant = System.getenv("TERMUX_PACKAGE_VARIANT") ?: "apt-android-7" 
 
 android {
     namespace = "com.termux"
-    ndkVersion = BuildConfig.ndkVersion
+    // ndkVersion = BuildConfig.ndkVersion
 
     defaultConfig {
         buildConfigField("String", "TERMUX_PACKAGE_VARIANT", "\"" + packageVariant + "\"") // Used by TermuxApplication class
@@ -49,13 +49,13 @@ dependencies {
     implementation(libs.common.markwon.linkify)
     implementation(libs.common.markwon.recycler)
 
-    implementation(projects.core.common)
-    implementation(projects.modules.preferences)
-    implementation(projects.core.resources)
+    implementation(projects.common)
+    implementation(projects.preferences)
+    implementation(projects.resources)
     implementation(projects.termux.termuxView)
     implementation(projects.termux.termuxShared)
 
-    testImplementation(projects.modules.testing.unit)
+    testImplementation(projects.testing.unit)
 }
 
 tasks.register("versionName") {

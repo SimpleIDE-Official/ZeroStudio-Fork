@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.termux.emulator"
-    ndkVersion = BuildConfig.ndkVersion
+    // ndkVersion = BuildConfig.ndkVersion
 
     defaultConfig {
     }
@@ -24,5 +24,5 @@ tasks.withType(Test::class.java) {
 
 dependencies {
     implementation(libs.androidx.annotation)
-    testImplementation(projects.modules.testing.unit)
+    testImplementation(projects.testing.unit)
 }

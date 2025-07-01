@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.termux.shared"
-    ndkVersion = BuildConfig.ndkVersion
+    // ndkVersion = BuildConfig.ndkVersion
     
     sourceSets {getByName("main") {  jniLibs.srcDirs("src/main/jniLibs") }  }
     packaging.jniLibs.useLegacyPackaging = true
@@ -29,12 +29,12 @@ dependencies {
     implementation(libs.common.io)
     implementation(libs.common.termuxAmLib)
 
-    implementation(projects.core.common)
+    implementation(projects.common)
     implementation(projects.termux.termuxView)
-    implementation(projects.core.buildInfo)
-    implementation(projects.modules.preferences)
-    implementation(projects.core.resources)
+    implementation(projects.buildInfo)
+    implementation(projects.preferences)
+    implementation(projects.resources)
 
-    testImplementation(projects.modules.testing.unit)
-    testImplementation(projects.modules.testing.android)
+    testImplementation(projects.testing.unit)
+    testImplementation(projects.testing.android)
 }
