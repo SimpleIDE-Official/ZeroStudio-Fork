@@ -155,6 +155,7 @@ dependencies {
   implementation(projects.templatesImpl)
   implementation(projects.uidesigner)
   implementation(projects.xmlInflater)
+  implementation(project(":MTDataFilesProvider"))
 
   // This is to build the tooling-api-impl project before the app is built
   // So we always copy the latest JAR file to assets

@@ -13,7 +13,7 @@
   <string name="need_help">Brauchen Sie Hilfe?</string>
   <string name="ide_preferences">IDE-Einstellungen</string>
   <string name="discussions_on_telegram">Auf Telegram diskutieren</string>
-  <string name="official_tg_channel">Offizieller Telegram-Kanal</string>
+  <string name="official_tg_channel">QQ Group</string>
   <string name="msg_empty_view">Keine Daten vorhanden</string>
   <string name="title_terminal">Konsole</string>
   <string name="reset">Zur&#xFC;cksetzen</string>
@@ -234,7 +234,7 @@
   <string name="msg_swipe_for_output">Swipe nach oben für @@build output@@.</string>
   <string name="idepref_editor_useSoftTabs_title">Soft tab benutzen</string>
   <string name="idepref_editor_useSoftTabs_summary">Wählen Sie, ob Leerzeichen anstelle von Tab verwendet werden sollen (\\t).</string>
-  <string name="btn_donate">Unterstützen</string>
+  <string name="btn_donate">Chat Ai</string>
   <string name="btn_docs">Dokumentation</string>
   <string name="btn_close">Schließen</string>
   <string name="msg_ignore_case">Groß-/Kleinschreibung ignorieren</string>

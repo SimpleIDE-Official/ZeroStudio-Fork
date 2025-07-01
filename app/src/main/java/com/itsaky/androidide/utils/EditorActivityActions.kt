@@ -48,7 +48,8 @@ import com.itsaky.androidide.actions.filetree.OpenWithAction
 import com.itsaky.androidide.actions.filetree.RenameAction
 import com.itsaky.androidide.actions.text.RedoAction
 import com.itsaky.androidide.actions.text.UndoAction
-
+import com.itsaky.androidide.actions.menu.EditorEditLineMenuAction
+import com.itsaky.androidide.actions.filetree.NewFileOrFolderAction
 /**
  * Takes care of registering actions to the actions registry for the editor activity.
  *
@@ -70,6 +71,7 @@ class EditorActivityActions {
       registry.registerAction(QuickRunWithCancellationAction(context, order++))
       registry.registerAction(RunTasksAction(context, order++))
       registry.registerAction(SaveFileAction(context, order++))
+      registry.registerAction(EditorEditLineMenuAction(context, order++))     
       registry.registerAction(PreviewLayoutAction(context, order++))
       registry.registerAction(FindActionMenu(context, order++))
       registry.registerAction(ProjectSyncAction(context, order++))
@@ -97,6 +99,7 @@ class EditorActivityActions {
       registry.registerAction(NewFileAction(context, order++))
       registry.registerAction(NewFolderAction(context, order++))
       registry.registerAction(OpenWithAction(context, order++))
+            registry.registerAction(NewFileOrFolderAction(context, order++))
       registry.registerAction(RenameAction(context, order++))
     }
 

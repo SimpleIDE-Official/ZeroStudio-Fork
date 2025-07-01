@@ -30,7 +30,10 @@ import isFDroidBuild
 import org.gradle.api.Project
 import org.gradle.api.artifacts.Dependency
 import projectVersionCode
-
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 /**
  * ABIs for which the product flavors will be created.
  * The keys in this map are the names of the product flavors whereas,
@@ -42,6 +45,9 @@ import projectVersionCode
  */
 internal val flavorsAbis = mapOf("armeabi-v7a" to 1, "arm64-v8a" to 2, "x86_64" to 3)
 private val disableCoreLibDesugaringForModules = arrayOf(":logsender", ":logger")
+private var shouldPrintNotAGitRepoWarning = true
+private var shouldPrintVersionName = true
+private var shouldPrintVersionCode = true
 
 fun Project.configureAndroidModule(
   coreLibDesugDep: Dependency
@@ -100,7 +106,7 @@ fun Project.configureAndroidModule(
       minSdk = BuildConfig.minSdk
       targetSdk = BuildConfig.targetSdk
       versionCode = projectVersionCode
-      versionName = rootProject.version.toString()
+versionName = "v" + getCurrentDateVersion()
 
       // required
       multiDexEnabled = true
@@ -175,6 +181,11 @@ fun Project.configureAndroidModule(
     buildFeatures.viewBinding = true
     buildFeatures.buildConfig = true
   }
+}
+// Function to get the current date in YYYYMMDD format
+private fun getCurrentDateVersion(): String {
+    val dateFormatter = DateTimeFormatter.ofPattern("yyyyMMdd")
+    return LocalDate.now().format(dateFormatter)
 }
 
 private fun Project.configureCoreLibDesugaring(baseExtension: BaseExtension,

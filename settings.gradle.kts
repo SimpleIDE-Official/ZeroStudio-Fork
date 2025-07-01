@@ -54,6 +54,7 @@ include(
   ":annotations",
   ":actions",
   ":app",
+  ":MTDataFilesProvider",
   ":build-info",
   ":common",
   ":editor",

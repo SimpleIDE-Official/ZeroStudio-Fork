@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
+
+<string name="msg_data_file_tree">数据文件树</string>
+<string name="select_directory_prompt">请选择一个要挂载的目录</string>
+<string name="select_directory_button">选择目录</string>
+<string name="error_loading_directory">无法加载目录，请重新选择。</string>
+ <string name="select_directory_button_text">Select Directory</string>
+ 
+<!-- 添加这些缺失的字符串资源 -->
+<string name="assistant_page_inject_message_time">默认注入消息时间</string>
+<string name="assistant_page_inject_message_time_desc">默认注入消息时间描述</string>
+<string name="assistant_page_thinking_budget_desc">默认思考预算描述</string>
+<string name="assistant_page_thinking_budget_tokens">默认思考预算令牌</string>
+<string name="assistant_page_thinking_budget_warning">默认思考预算警告</string>
+<string name="setting_mcp_page_mcp_desc">默认MCP页面描述</string>
+<string name="setting_mcp_page_websocket_url_desc">默认WebSocket URL描述</string>
+<string name="setting_mcp_page_websocket_url_placeholder">默认WebSocket URL占位符</string>
+
+
+    <!-- NewFileOrFolderAction 所需的字符串 -->
+    <string name="msg_activity_not_found">Unable to get Activity context。</string>
+    <string name="msg_unsupported_characters">The file name contains unsupported characters：%s</string>
+    <string name="msg_root_folder_not_found">The root folder does not exist or is not a directory：%s</string>
+    <string name="msg_folder_creation_exception">Folder creation exception：%s</string>
+    <string name="msg_paste_successful">The paste was successful。</string>
+    <string name="msg_clipboard_empty">The clipboard is empty。</string>
+    <string name="empty_history">The history is empty。</string>
+    <string name="text_file">File</string>
+    <string name="text_folder">Folder</string>
+
+    <string name="checkbox_dots_to_slashes">Replace "." Convert to "/" (for multi-level folders)</string>
+    <string name="msg_ui_component_not_found">Internal error: Required UI component not found in layout. Please check your app installation.</string>
+    <string name="dropdown_arrow_desc">Drop-down arrow</string>
+    <string name="remove_spaces_checkbox">Remove the space symbol from the input box</string>
+    <string name="file_folder_name">The name of the folder or file</string>
+    <string name="folder_name2">The name of the folder</string>
+    <string name="msg_folder_creation_failed_for_parent">Unable to create parent folder：%s</string>
+     <string name="msg_can_contain_slashesfile">The name can contain a slash (/) to create a multi-level path, or a dot (.) to create a package name path。</string>
+     <string name="msg_can_contain_slashes">The name can contain a slash (/) to create a multi-level path, or a dot (.) to create a package name path。</string>
+     <string name="msg_file_creation_exception">The file was created abnormally：%s</string>
+     <string name="radio_suffix_list">List of suffixes</string>
+     <string name="radio_history_list">History</string>
+     <string name="text_paste">stickup</string> 
+     <string name="action_create_file_folder">Create a file/folder</string> 
+
+
+
+ <!-- 代码编辑器Line操作与编辑相关menu action -->
+    <string name="edit">Edit</string>
+    <string name="copy_line">Copy Line</string>
+    <string name="cut_line">Cut Line</string>
+    <string name="delete_line">Delete Line</string>
+    <string name="empty_line">Empty Line</string>
+    <string name="replace_line">Replace Line</string>
+    <string name="duplicate_line">Duplicate Line</string>
+    <string name="convert_uppercase">Convert to Uppercase</string>
+    <string name="convert_lowercase">Convert to Lowercase</string>
+    <string name="increase_indent">Increase Indent</string>
+    <string name="decrease_indent">Decrease Indent</string>
+    <string name="toggle_comment">Toggle Comment</string>
+    <string name="jump_to_line">Jump to Line</string>
+    <string name="jump_to_line_title">Jump to Line</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="enter_something_error">Please enter something</string>
+    <string name="value_out_of_range_error">Value out of range</string>
+    <string name="invalid_number_error">Invalid number</string>
+    <string name="wrap_text">Wrap text</string>
+  
+
   <!-- AndroidIDE -->
   <string name="copy" tools:override="true">Copy</string>
   <string name="terminal_more">More…</string>
@@ -17,7 +86,7 @@
   <string name="need_help">Need Help?</string>
   <string name="ide_preferences">IDE preferences</string>
   <string name="discussions_on_telegram">Discussions on Telegram</string>
-  <string name="official_tg_channel">Official Telegram Channel</string>
+<string name="official_tg_channel">QQ Group</string>
   <string name="msg_empty_view">No data</string>
   <string name="title_terminal">Terminal</string>
   <string name="reset">Reset</string>
@@ -108,7 +177,7 @@
   <string name="msg_layout_file_exists">Layout file already exists!</string>
   <string name="msg_invalid_name">Invalid Name!</string>
   <string name="text_create">Create</string>
-  <string name="msg_can_contain_slashes">If the path contains File separator (\'/\'), then the required (parent) directories will be created if they don\'t exist.</string>
+  <!-- <string name="msg_can_contain_slashes">If the path contains File separator (\'/\'), then the required (parent) directories will be created if they don\'t exist.</string> -->
   <string name="folder_name">Folder Name</string>
   <string name="file_name">File Name</string>
   <string name="new_name">New name</string>
@@ -255,7 +324,7 @@
   <string name="msg_swipe_for_output">Swipe up for @@build output@@.</string>
   <string name="idepref_editor_useSoftTabs_title">Use soft tab</string>
   <string name="idepref_editor_useSoftTabs_summary">Choose whether to use spaces instead of tab character (\\t).</string>
-  <string name="btn_donate">Donate</string>
+  <string name="btn_donate">Chat Ai</string>
   <string name="btn_docs">Documentation</string>
   <string name="btn_close">Close</string>
   <string name="msg_ignore_case">Ignore case</string>

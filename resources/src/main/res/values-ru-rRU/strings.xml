@@ -13,7 +13,7 @@
   <string name="need_help">Нужна помощь?</string>
   <string name="ide_preferences">Настройки IDE</string>
   <string name="discussions_on_telegram">Обсуждение в Telegram</string>
-  <string name="official_tg_channel">Официальный канал в Telegram</string>
+  <string name="official_tg_channel">QQ Group</string>
   <string name="msg_empty_view">Нет данных</string>
   <string name="title_terminal">Терминал</string>
   <string name="reset">Сброс</string>
@@ -234,7 +234,7 @@
   <string name="msg_swipe_for_output">Проведите вверх для просмотра @@вывода сборки@@.</string>
   <string name="idepref_editor_useSoftTabs_title">Используйте программную вкладку</string>
   <string name="idepref_editor_useSoftTabs_summary">Выберите, следует ли использовать пробелы вместо символа табуляции (\\t).</string>
-  <string name="btn_donate">Пожертвовать</string>
+  <string name="btn_donate">Chat A</string>
   <string name="btn_docs">Документация</string>
   <string name="btn_close">Закрыть</string>
   <string name="msg_ignore_case">Игнорировать регистр</string>

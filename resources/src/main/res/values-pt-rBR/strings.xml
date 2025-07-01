@@ -13,7 +13,7 @@
   <string name="need_help">Precisa de ajuda?</string>
   <string name="ide_preferences">Configurações da IDE</string>
   <string name="discussions_on_telegram">Discussões no Telegram</string>
-  <string name="official_tg_channel">Canal oficial do Telegram</string>
+  <string name="official_tg_channel">QQ Group</string>
   <string name="msg_empty_view">Sem dados</string>
   <string name="title_terminal">Terminal</string>
   <string name="reset">Redefinir</string>
@@ -234,7 +234,7 @@
   <string name="msg_swipe_for_output">Deslize à cima para @@saída de compilação@@.</string>
   <string name="idepref_editor_useSoftTabs_title">Usar tabulação suave</string>
   <string name="idepref_editor_useSoftTabs_summary">Escolha se deseja usar espaços em vez de caracteres de tabulação (\\t).</string>
-  <string name="btn_donate">Doar</string>
+  <string name="btn_donate">Chat Ai</string>
   <string name="btn_docs">Documentação</string>
   <string name="btn_close">Fechar</string>
   <string name="msg_ignore_case">Ignorar maiúsculas/minúsculas</string>

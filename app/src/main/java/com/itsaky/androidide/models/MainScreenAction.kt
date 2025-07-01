@@ -79,16 +79,16 @@ constructor(
           R.string.msg_preferences,
           R.drawable.ic_settings)
 
-        val donate = MainScreenAction(
-          ACTION_DONATE,
-          R.string.btn_donate,
-          R.drawable.ic_heart
-        )
+        // val donate = MainScreenAction(
+          // ACTION_DONATE,
+          // R.string.btn_donate,
+          // R.drawable.ic_heart
+        // )
 
-        val docs = MainScreenAction(
-          ACTION_DOCS,
-          R.string.btn_docs,
-          R.drawable.ic_docs)
+        // val docs = MainScreenAction(
+          // ACTION_DOCS,
+          // R.string.btn_docs,
+          // R.drawable.ic_docs)
 
         Collections.addAll(this,
           createProject,
@@ -96,8 +96,8 @@ constructor(
           cloneGitRepository,
           openTerminal,
           preferences,
-          donate,
-          docs
+         // donate,
+       //   docs
         )
       }
     }

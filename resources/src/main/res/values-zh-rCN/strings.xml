@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <!-- AndroidIDE -->
+ 
+  
+       <!-- NewFileOrFolderAction 所需的字符串 -->
+    <string name="msg_activity_not_found">无法获取Activity上下文。</string>
+    <string name="msg_unsupported_characters">文件名包含不支持的字符：%s</string>
+    <string name="msg_root_folder_not_found">根文件夹不存在或不是目录：%s</string>
+    <string name="msg_folder_creation_exception">文件夹创建异常：%s</string>
+    <string name="msg_paste_successful">粘贴成功。</string>
+    <string name="msg_clipboard_empty">剪贴板为空。</string>
+    <string name="empty_history">历史记录为空。</string>
+    <string name="text_file">文件</string>
+    <string name="text_folder">文件夹</string>
+
+    <string name="checkbox_dots_to_slashes">将(.)换为(/) (用于创建多级文件夹)</string>
+    <string name="msg_ui_component_not_found">Internal error: Required UI component not found in layout. Please check your app installation.</string>
+    <string name="dropdown_arrow_desc">下拉箭头</string>
+    <string name="remove_spaces_checkbox">移除空格</string>
+    <string name="file_folder_name">文件夹名或文件名</string>
+    <string name="msg_folder_creation_failed_for_parent">无法创建父文件夹：%s</string>
+     <string name="msg_can_contain_slashesfile">名称可包含斜杠（/）用于创建多级路径，或点（.）用于包名路径。</string>
+     <string name="msg_file_creation_exception">文件创建异常：%s</string>
+     <string name="radio_suffix_list">后缀列表</string>
+     <string name="radio_history_list">历史记录</string>
+     <string name="text_paste">粘贴</string> 
+     <string name="action_create_file_folder">创建文件/文件夹</string> 
+
+  <string name="edit">编辑</string>
+<string name="copy_line">复制行</string>
+<string name="cut_line">剪切行</string>
+<string name="delete_line">删除行</string>
+<string name="empty_line">清空行</string>
+<string name="replace_line">替换行</string>
+<string name="duplicate_line">重复行</string>
+<string name="convert_uppercase">转为大写</string>
+<string name="convert_lowercase">转为小写</string>
+<string name="increase_indent">增加缩进</string>
+<string name="decrease_indent">减少缩进</string>
+<string name="toggle_comment">切换注释</string>
+<string name="jump_to_line">跳转到行</string>
+<string name="jump_to_line_title">跳转到行</string>
+<string name="ok_button">OK</string>
+<string name="cancel_button">取消</string>
+<string name="enter_something_error">输入内容！</string>
+<string name="value_out_of_range_error">值超出范围。</string>
+<string name="invalid_number_error">数字格式无效。</string>
+    <string name="wrap_text" tools:override="true">自动换行</string>
+    
+    
+      <!-- AndroidIDE -->
   <string name="copy" tools:override="true">复制</string>
   <string name="terminal_more">更多…</string>
   <string name="text_to_search">要搜索的文本</string>
@@ -11,9 +59,9 @@
   <string name="msg_get_package_failed">获取软件包名称失败！</string>
   <string name="msg_need_help">如果您在使用 AndroidIDE 或构建 Android 应用时遇到问题，您可以加入 Telegram 群组寻求帮助。\n\n您也可以发送建议到我们的电子邮件地址。</string>
   <string name="need_help">需要帮助？</string>
-  <string name="ide_preferences">IDE 首选项</string>
+  <string name="ide_preferences">IDE 设置项</string>
   <string name="discussions_on_telegram">在 Telegram 上讨论</string>
-  <string name="official_tg_channel">官方 Telegram 频道</string>
+  <string name="official_tg_channel">QQ群</string>
   <string name="msg_empty_view">没有数据</string>
   <string name="title_terminal">终端</string>
   <string name="reset">重置</string>
@@ -161,7 +209,7 @@
   <string name="title_general">常规</string>
   <string name="title_tab_size">Tab 宽度</string>
   <string name="msg_tab_size">指定制表符代表的空格数</string>
-  <string name="msg_preferences">首选项</string>
+  <string name="msg_preferences">设置</string>
   <string name="pref_changelog">变更日志</string>
   <string name="msg_editor_font_size">请选择编辑器的默认字体大小：</string>
   <string name="msg_clear_cache">这将删除 Gradle 创建的缓存目录。如果删除，下一次的构建可能需要更长的时间，因为 Gradle 将再次下载所需的文件。\n\n您确定要删除缓存吗？</string>
@@ -234,7 +282,7 @@
   <string name="msg_swipe_for_output">上滑查看 @@构建输出@@</string>
   <string name="idepref_editor_useSoftTabs_title">使用空格代替制表符</string>
   <string name="idepref_editor_useSoftTabs_summary">设置是否使用多个空格代替制表符 (\\t)</string>
-  <string name="btn_donate">捐助</string>
+  <string name="btn_donate">Chat A</string>
   <string name="btn_docs">文档</string>
   <string name="btn_close">关闭</string>
   <string name="msg_ignore_case">忽略大小写</string>
@@ -388,7 +436,7 @@
   <string name="msg_use_kts">将 Kotlin 脚本 (.kts) 用于 Gradle build 文件</string>
   <string name="title_privacy">隐私</string>
   <string name="title_androidide_statistics">AndroidIDE 统计</string>
-  <string name="msg_androidide_statistics">通过提供匿名统计信息帮助我们改进 AndroidIDE。 我们收集有关您设备的基本信息仅用于用户群统计。 可以在首选项中查看共享的确切数据。 您的数据是安全的，不会与第三方服务共享。 您可以随时在首选项中选择退出。</string>
+  <string name="msg_androidide_statistics">通过提供匿名统计信息帮助我们改进 AndroidIDE。 我们收集有关您设备的基本信息仅用于用户群统计。 可以在设置中查看共享的确切数据。 您的数据是安全的，不会与第三方服务共享。 您可以随时在设置项中选择退出。</string>
   <string name="summary_anonymous_usage_stats">匿名使用统计</string>
   <string name="idepref_stats_optIn_title">统计数据收集</string>
   <string name="idepref_stats_optIn_summary">允许收集安装指标和设备统计信息（完全匿名）。</string>
@@ -406,7 +454,7 @@
   <string name="idepref_devOptions_dumpLogs_title">转储日志</string>
   <string name="idepref_devOptions_dumpLogs_summary">将 AndroidIDE 日志转储到 $HOME/.androidide/logs</string>
   <string name="msg_emptyview_applogs">运行应用的 debug 变体以在此处查看其日志。</string>
-  <string name="msg_logsender_disabled">LogSender 已禁用。您可以在首选项中启用它。</string>
+  <string name="msg_logsender_disabled">LogSender 已禁用。您可以在设置中启用它。</string>
   <string name="msg_emptyview_idelogs">IDE 中的日志显示在这里。</string>
   <string name="msg_emptyview_diagnostics">打开文件以显示其诊断结果</string>
   <string name="msg_emptyview_buildoutput">"构建应用或运行任务以在此处查看其构建输出。"</string>

@@ -13,7 +13,7 @@
   <string name="need_help">¿Necesitas Ayuda?</string>
   <string name="ide_preferences">Configuración</string>
   <string name="discussions_on_telegram">Debates en Telegram</string>
-  <string name="official_tg_channel">Canal Oficial en Telegram</string>
+  <string name="official_tg_channel">QQ Group</string>
   <string name="msg_empty_view">No data</string>
   <string name="title_terminal">Terminal</string>
   <string name="reset">Reiniciar</string>
@@ -234,7 +234,7 @@
   <string name="msg_swipe_for_output">Desliza hacia arriba para ver el @@Registro@@.</string>
   <string name="idepref_editor_useSoftTabs_title">Usar pestaña flexible</string>
   <string name="idepref_editor_useSoftTabs_summary">Elija si desea utilizar espacios en lugar del carácter de pestaña (\\t).</string>
-  <string name="btn_donate">Donate</string>
+  <string name="btn_donate">Chat Ai</string>
   <string name="btn_docs">Documentación</string>
   <string name="btn_close">Cerrar</string>
   <string name="msg_ignore_case">Ignorar Mayúscula/minúscula</string>

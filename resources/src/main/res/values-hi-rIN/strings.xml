@@ -13,7 +13,7 @@
   <string name="need_help">मदद की ज़रूरत है?</string>
   <string name="ide_preferences">IDE प्रेफरेंसेस</string>
   <string name="discussions_on_telegram">टेलीग्राम पर चर्चाएं</string>
-  <string name="official_tg_channel">आधिकारिक टेलीग्राम चैनल</string>
+  <string name="official_tg_channel">QQ Group</string>
   <string name="msg_empty_view">कोई डेटा नहीं</string>
   <string name="title_terminal">टर्मिनल</string>
   <string name="reset">रिसेट</string>
@@ -234,7 +234,7 @@
   <string name="msg_swipe_for_output">\@@बिल्ड आउटपुट@@ के लिए ऊपर स्वाइप करें।</string>
   <string name="idepref_editor_useSoftTabs_title">सॉफ्ट टैब का उपयोग करें</string>
   <string name="idepref_editor_useSoftTabs_summary">चुनें कि टैब वर्ण (\\t) के बजाय रिक्त स्थान का उपयोग करना है या नहीं।</string>
-  <string name="btn_donate">सहयोग करें</string>
+  <string name="btn_donate">Chat Ai</string>
   <string name="btn_docs">प्रलेखन</string>
   <string name="btn_close">बंद करे</string>
   <string name="msg_ignore_case">अक्षरों के केस को नजरअंदाज करें</string>
