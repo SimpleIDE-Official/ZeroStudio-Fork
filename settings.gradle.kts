@@ -1,4 +1,3 @@
-
 @file:Suppress("UnstableApiUsage")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
@@ -9,10 +8,11 @@ pluginManagement {
   }
 
   repositories {
-  maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+    maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
     maven { url = uri("https://maven.aliyun.com/repository/public") }
     maven { url = uri("https://maven.aliyun.com/repository/google") }
     gradlePluginPortal()
+    maven { url = uri("https://plugins.gradle.org/m2/") }
     google()
     mavenCentral()
   }
@@ -54,25 +54,18 @@ dependencyResolutionManagement {
 
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
   repositories {
-  
     google()
     mavenCentral()
-    // maven { url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/") }
-    // maven { url = uri("https://s01.oss.sonatype.org/content/groups/public/") }
     maven { url = uri("https://jitpack.io") }
     maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
     maven { url = uri("https://maven.aliyun.com/repository/public") }
     maven { url = uri("https://maven.aliyun.com/repository/google") }
     maven { url = uri("https://repo1.maven.org/maven2/") }
-    
   }
 }
 
 buildscript {
   repositories {
-  // maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
-    // maven { url = uri("https://maven.aliyun.com/repository/public") }
-    // maven { url = uri("https://maven.aliyun.com/repository/google") }
     mavenCentral()
   }
   dependencies {
@@ -106,7 +99,7 @@ if (FDroidConfig.hasRead && FDroidConfig.isFDroidBuild) {
 
     project.setProperty("version", simpleVersion)
   }
-} else if(isGitRepo) {
+} else if (isGitRepo) {
   apply {
     plugin("com.mooltiverse.oss.nyx")
   }
@@ -178,7 +171,6 @@ include(
 )
 
 object FDroidConfig {
-
   var hasRead: Boolean = false
     private set
 
@@ -213,6 +205,6 @@ object FDroidConfig {
     isFDroidBuild = properties.getProperty(PROP_FDROID_BUILD, null).toBoolean()
 
     fDroidVersionName = properties.getProperty(PROP_FDROID_BUILD_VERSION, null)
-    fDroidVersionCode =  properties.getProperty(PROP_FDROID_BUILD_VERCODE, null)?.toInt()
+    fDroidVersionCode = properties.getProperty(PROP_FDROID_BUILD_VERCODE, null)?.toInt()
   }
 }
